@@ -15,6 +15,7 @@ import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import { SessionProvider } from "next-auth/react";
 import Head from "next/head";
 import { useEffect, useState } from "react";
+import { Analytics } from "@vercel/analytics/react";
 
 type CustomAppProps = AppProps & {
   Component: CustomNextPage;
@@ -65,6 +66,7 @@ export default function App({
                 zIndex={2077}
                 autoClose={4000}
               />
+              <Analytics />
               <AuthChecker>
                 {hydated && getLayout(<Component {...pageProps} />)}
               </AuthChecker>
