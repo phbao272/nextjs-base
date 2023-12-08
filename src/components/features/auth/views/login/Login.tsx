@@ -10,7 +10,7 @@ export const Login = () => {
           fontWeight: 900,
         }}
       >
-        Zen System管理者ログイン
+        Mai an cuc
       </Title>
       <LoginForm />
     </Container>
